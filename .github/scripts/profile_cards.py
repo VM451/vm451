@@ -53,7 +53,7 @@ def header(d):
         f'<image x="62" y="58" width="108" height="108" href="{escape(d["avatar"], quote=True)}" clip-path="url(#avatar)"/>',
         label(207, 77, '@'+username, 18, ACCENT, 700, mono=True),
         label(203, 136, username, 62, TEXT, 800),
-        label(207, 170, 'Native Swift Developer · iOS', 25, ACCENT, 700),
+        label(207, 170, 'Software Engineer in Apple Plateform', 25, ACCENT, 700),
         label(207, 198, bio, 17, DIM),
     ]
     for i, (language, path) in enumerate(LANGUAGE_ICONS.items()):
@@ -66,7 +66,7 @@ def header(d):
             f'<path d="{path}" fill="{TEXT if swift else ACCENT}"/></svg>',
             label(x+41, 241, language, 17, weight=700),
         ]
-    return panel(300, f'{username} on GitHub', f'Native Swift developer for iOS. {bio} Languages: Swift, Rust, Python, TypeScript.', elements)
+    return panel(300, f'{username} on GitHub', f'Software Engineer in Apple Plateform. {bio} Languages: Swift, Rust, Python, TypeScript.', elements)
 
 
 def polygon(points, color):

@@ -126,7 +126,7 @@ def render_readme(data):
     total, active, peak = data["total"], data["active"], data["peak"]
     projects = data["projects"]
     lines = [
-        f"[![VM451, native Swift developer for iOS](./profile/header.svg)]({PROFILE})",
+        f"[![VM451, Software Engineer in Apple Plateform](./profile/header.svg)]({PROFILE})",
         "",
         "## The city I built this year",
         "",

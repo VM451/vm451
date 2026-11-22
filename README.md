@@ -1,6 +1,6 @@
 <!-- profile:begin -->
 
-[![VM451, native Swift developer for iOS](./profile/header.svg)](https://github.com/VM451)
+[![VM451, Software Engineer in Apple Plateform](./profile/header.svg)](https://github.com/VM451)
 
 ## The city I built this year
 
