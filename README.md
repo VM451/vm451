@@ -1,25 +1,50 @@
-[![VM451: Everyone else must lose, because I must win. Swift, Rust, Python, TypeScript.](./profile-header.png)](https://github.com/VM451)
+# VM451
+
+> Everyone else must lose, because I must win
+
+`Swift` · `Rust` · `Python` · `TypeScript`
+
+<!-- profile:begin -->
 
 ## The city I built this year
 
-[![Contribution City: an isometric skyline of 1,793 contributions across 176 active days; busiest day: 165.](./contribution-city.png)](https://github.com/VM451#contributions)
+**1,794 contributions** · 176 active days · Busiest day: 165
 
-<p align="center">Every building is a day; taller means more contributions.</p>
+Last 16 weeks, oldest to newest. Each character is one day.
+
+```text
+Sun  : : : : : . : : : . : . : . : +
+Mon  : : : : : : . . . : : : : . +
+Tue  : . : . : : . : : : : . : : +
+Wed  : . . . . : : : : : : . : : +
+Thu  . . : . : : : : . . : : : . +
+Fri  . : : : : . : : . : . : : . +
+Sat  : : : : : : . . . . . . : : .
+```
+
+` . : - = + ` — none to highest activity.
+
+[Open GitHub's contribution calendar](https://github.com/VM451#contributions) · 2025-11-23 to 2026-11-22
 
 ## Population
 
-![Profile Signal: 0 stars on public repos, 1,793 contributions, 9 public repositories, and 5 followers.](./profile-population.png)
+| Stars across public repos | Contributions | Public repos | Followers |
+| ---: | ---: | ---: | ---: |
+| 0 | 1,794 | 9 | 5 |
 
 ## Landmarks
 
-![Four project cards: AnyTypKit, TypstUniverseKit, BrightCraft-Legal, and LedgerAgent.](./profile-landmarks.png)
+| Project | Description | Language | Stars | Updated (UTC) |
+| --- | --- | --- | ---: | --- |
+| [AnyTypKit](https://github.com/VM451/AnyTypKit) | Convert any document \(Word, PowerPoint, Excel, PDF, EPUB, LaTeX, HTML, Markdown, CSV\) to clean Typst \(.typ\). Built in Rust, with CLI, Swift, Node.js, Python, and WASM. | Rust | 0 | 2026-11-22 |
+| [TypstUniverseKit](https://github.com/VM451/TypstUniverseKit) | Native Swift SDK for Typst Universe - search, download, and scaffold packages in Apple apps. Offline-first, secure-by-default, with SwiftUI browser. Zero runtime deps. | Swift | 0 | 2026-11-20 |
+| [BrightCraft-Legal](https://github.com/VM451/BrightCraft-Legal) | No description provided. | — | 0 | 2026-11-18 |
+| [LedgerAgent](https://github.com/VM451/LedgerAgent) | Self-directed ROI-aware earning agent with persistent memory, Agent Reach eyes + Agent Browser hands, delivered as a portable Agent Plugin | Rust | 0 | 2026-11-17 |
 
-[**AnyTypKit**](https://github.com/VM451/AnyTypKit) · [**TypstUniverseKit**](https://github.com/VM451/TypstUniverseKit) · [**BrightCraft-Legal**](https://github.com/VM451/BrightCraft-Legal) · [**LedgerAgent**](https://github.com/VM451/LedgerAgent)
+<!-- profile:end -->
 
 ## Visit
 
-[![GitHub: @vm451](./profile-visit.png)](https://github.com/VM451)
+[GitHub](https://github.com/VM451) · [Repositories](https://github.com/VM451?tab=repositories) · [Followers](https://github.com/VM451?tab=followers)
 
-<p align="center"><a href="https://github.com/VM451">GitHub</a></p>
-
-<p align="center"><sub>VM451 · GitHub data snapshot: Nov 22, 2026 · Layout inspired by <a href="https://www.gitskins.com/templates/contribution-city">GitSkins</a></sub></p>
+<sub>GitHub Actions refreshes this README every 15 minutes when scheduling is available. For current activity, open the GitHub contribution calendar.</sub>
