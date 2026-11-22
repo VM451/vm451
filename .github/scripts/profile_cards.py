@@ -2,6 +2,8 @@ from html import escape
 from math import sqrt
 from textwrap import shorten, wrap
 
+from language_icons import LANGUAGE_ICONS
+
 WIDTH = 1080
 TEXT, ACCENT, DIM, EDGE = '#fff1e7', '#ffb388', '#d0ab9c', '#a9553d'
 MONO = 'ui-monospace, SFMono-Regular, Menlo, monospace'
@@ -54,11 +56,16 @@ def header(d):
         label(207, 170, 'Native Swift Developer · iOS', 25, ACCENT, 700),
         label(207, 198, bio, 17, DIM),
     ]
-    for i, language in enumerate(('Swift', 'Rust', 'Python', 'TypeScript')):
+    for i, (language, path) in enumerate(LANGUAGE_ICONS.items()):
         x = 58 + 160*i
         swift = language == 'Swift'
         fill, stroke = ('#623020', '#f05138') if swift else ('#3a251e', EDGE)
-        elements += [box(x, 217, 143, 36, 18, fill, stroke), label(x+17, 241, language, 17, weight=700)]
+        elements += [
+            box(x, 217, 143, 36, 18, fill, stroke),
+            f'<svg x="{x+13}" y="225" width="20" height="20" viewBox="0 0 24 24" aria-hidden="true">'
+            f'<path d="{path}" fill="{TEXT if swift else ACCENT}"/></svg>',
+            label(x+41, 241, language, 17, weight=700),
+        ]
     return panel(300, f'{username} on GitHub', f'Native Swift developer for iOS. {bio} Languages: Swift, Rust, Python, TypeScript.', elements)
 
 
