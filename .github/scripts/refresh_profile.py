@@ -1,10 +1,13 @@
 import json
 import re
+from base64 import b64encode
 from datetime import date, timedelta
-from html import escape
 from html.parser import HTMLParser
 from pathlib import Path
+from urllib.parse import urlsplit, urlunsplit
 from urllib.request import Request, urlopen
+
+from profile_cards import render_cards
 
 USER = "VM451"
 PROFILE = f"https://github.com/{USER}"
@@ -18,6 +21,27 @@ def fetch(url):
     request = Request(url, headers={"User-Agent": "VM451-profile-refresh"})
     with urlopen(request, timeout=15) as response:
         return response.read().decode("utf-8")
+
+
+def avatar_uri(url):
+    host = "avatars.githubusercontent.com"
+    parts = urlsplit(url)
+    if parts.scheme != "https" or parts.netloc != host:
+        raise ValueError("Unexpected GitHub avatar URL")
+    thumbnail = urlunsplit(("https", host, parts.path, "s=128", ""))
+    with urlopen(thumbnail, timeout=15) as response:
+        if urlsplit(response.url).netloc != host:
+            raise ValueError("Unexpected GitHub avatar redirect")
+        data = response.read(128 * 1024 + 1)
+    if data.startswith(b"\xff\xd8\xff"):
+        mime = "image/jpeg"
+    elif data.startswith(b"\x89PNG\r\n\x1a\n"):
+        mime = "image/png"
+    else:
+        raise ValueError("Unsupported GitHub avatar format")
+    if len(data) > 128 * 1024:
+        raise ValueError("GitHub avatar is too large")
+    return f"data:{mime};base64,{b64encode(data).decode('ascii')}"
 
 
 class Calendar(HTMLParser):
@@ -60,57 +84,74 @@ class Calendar(HTMLParser):
         return days
 
 
-def markdown(text):
-    plain = escape(" ".join(text.split()))
-    return re.sub(r"([\\`*_{}\[\]()!|~])", r"\\\1", plain)
-
-
-def render(days, account, repos):
+def profile_data(days, account, repos):
     counts = [count for _, count, _ in days]
-    total, active, peak = sum(counts), sum(count > 0 for count in counts), max(counts)
-    last = days[-1][0]
-    sunday = last - timedelta(days=(last.weekday() + 1) % 7)
-    levels = {day: ".:-=+"[level] for day, _, level in days}
-    graph = []
-    for offset, label in enumerate(("Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat")):
-        row = (levels.get(sunday + timedelta(weeks=w, days=offset), " ") for w in range(-15, 1))
-        graph.append(f"{label}  " + " ".join(row).rstrip())
-    stars = sum(repo["stargazers_count"] for repo in repos)
+    first = days[0][0]
+    sunday = first - timedelta(days=(first.weekday() + 1) % 7)
     by_name = {repo["name"]: repo for repo in repos}
-    lines = [
-        "## The city I built this year",
-        "",
-        f"**{total:,} contributions** · {active:,} active days · Busiest day: {peak:,}",
-        "",
-        "Last 16 weeks, oldest to newest. Each character is one day.",
-        "",
-        "```text",
-        *graph,
-        "```",
-        "",
-        "` . : - = + ` — none to highest activity.",
-        "",
-        f"[Open GitHub's contribution calendar]({PROFILE}#contributions) · {days[0][0]} to {last}",
-        "",
-        "## Population",
-        "",
-        "| Stars across public repos | Contributions | Public repos | Followers |",
-        "| ---: | ---: | ---: | ---: |",
-        f"| {stars:,} | {total:,} | {account['public_repos']:,} | {account['followers']:,} |",
-        "",
-        "## Landmarks",
-        "",
-        "| Project | Description | Language | Stars | Updated (UTC) |",
-        "| --- | --- | --- | ---: | --- |",
-    ]
+    projects = []
     for name in PROJECTS:
         repo = by_name.get(name)
         if repo is None:
             continue
-        description = markdown(repo["description"] or "No description provided.")
-        language = markdown(repo["language"] or "—")
-        updated = date.fromisoformat(repo["updated_at"][:10])
-        lines.append(f"| [{name}]({PROFILE}/{name}) | {description} | {language} | {repo['stargazers_count']:,} | {updated} |")
+        mix = json.loads(fetch(f"https://api.github.com/repos/{USER}/{name}/languages"))
+        if not isinstance(mix, dict) or any(type(size) is not int or size <= 0 for size in mix.values()):
+            raise ValueError(f"Unexpected GitHub languages for {name}")
+        projects.append({
+            "name": name,
+            "description": repo["description"] or "No description provided.",
+            "language": repo["language"],
+            "stars": repo["stargazers_count"],
+            "updated": date.fromisoformat(repo["updated_at"][:10]),
+            "mix": sorted(mix.items(), key=lambda item: (-item[1], item[0])),
+        })
+    return {
+        "login": account["login"],
+        "bio": account["bio"] or "",
+        "avatar": avatar_uri(account["avatar_url"]),
+        "first": first,
+        "last": days[-1][0],
+        "days": [(*(divmod((day - sunday).days, 7)), count, level) for day, count, level in days],
+        "total": sum(counts),
+        "active": sum(count > 0 for count in counts),
+        "peak": max(counts),
+        "repos": account["public_repos"],
+        "followers": account["followers"],
+        "stars": sum(repo["stargazers_count"] for repo in repos),
+        "projects": projects,
+    }
+
+
+def render_readme(data):
+    total, active, peak = data["total"], data["active"], data["peak"]
+    projects = data["projects"]
+    lines = [
+        f"[![VM451, GitHub profile and languages](./profile/header.svg)]({PROFILE})",
+        "",
+        "## The city I built this year",
+        "",
+        f"[![Contribution City: {total:,} contributions, {active:,} active days, busiest day {peak:,}.](./profile/city.svg)]({PROFILE}#contributions)",
+        "",
+        '<p align="center">Every tile is a day; taller buildings mean more contributions.</p>',
+        "",
+        f'<p align="center"><sub>{data["first"]} to {data["last"]} · <a href="{PROFILE}#contributions">GitHub contribution calendar</a></sub></p>',
+        "",
+        "## Population",
+        "",
+        f"![Profile Signal: {data['stars']:,} stars, {total:,} contributions, {data['repos']:,} public repos, {data['followers']:,} followers.](./profile/population.svg)",
+        "",
+        "## Landmarks",
+        "",
+        "![Project cards with languages, stars, and update dates](./profile/landmarks.svg)",
+        "",
+        " · ".join(f"[**{p['name']}**]({PROFILE}/{p['name']})" for p in projects),
+        "",
+        "## Visit",
+        "",
+        f"[![GitHub: @vm451](./profile/visit.svg)]({PROFILE})",
+        "",
+        f'<p align="center"><a href="{PROFILE}">GitHub</a> · <a href="{PROFILE}?tab=repositories">Repositories</a></p>',
+    ]
     return "\n".join(lines)
 
 
@@ -139,9 +180,17 @@ def update(path):
     ):
         raise ValueError("Incomplete or unexpected GitHub repository list")
 
+    data = profile_data(days, account, repos)
+    cards = render_cards(data)
     before, remainder = original.split(BEGIN)
     _, after = remainder.split(END)
-    refreshed = f"{before}{BEGIN}\n\n{render(days, account, repos)}\n\n{END}{after}"
+    refreshed = f"{before}{BEGIN}\n\n{render_readme(data)}\n\n{END}{after}"
+    directory = path.parent / "profile"
+    directory.mkdir(exist_ok=True)
+    for name, svg in cards.items():
+        target = directory / name
+        if not target.exists() or target.read_text(encoding="utf-8") != svg:
+            target.write_text(svg, encoding="utf-8")
     if refreshed != original:
         path.write_text(refreshed, encoding="utf-8")
 

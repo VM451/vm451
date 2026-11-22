@@ -1,50 +1,31 @@
-# VM451
-
-> Everyone else must lose, because I must win
-
-`Swift` · `Rust` · `Python` · `TypeScript`
-
 <!-- profile:begin -->
+
+[![VM451, GitHub profile and languages](./profile/header.svg)](https://github.com/VM451)
 
 ## The city I built this year
 
-**1,795 contributions** · 176 active days · Busiest day: 165
+[![Contribution City: 1,795 contributions, 176 active days, busiest day 165.](./profile/city.svg)](https://github.com/VM451#contributions)
 
-Last 16 weeks, oldest to newest. Each character is one day.
+<p align="center">Every tile is a day; taller buildings mean more contributions.</p>
 
-```text
-Sun  : : : : : . : : : . : . : . : +
-Mon  : : : : : : . . . : : : : . +
-Tue  : . : . : : . : : : : . : : +
-Wed  : . . . . : : : : : : . : : +
-Thu  . . : . : : : : . . : : : . +
-Fri  . : : : : . : : . : . : : . +
-Sat  : : : : : : . . . . . . : : .
-```
-
-` . : - = + ` — none to highest activity.
-
-[Open GitHub's contribution calendar](https://github.com/VM451#contributions) · 2025-11-23 to 2026-11-22
+<p align="center"><sub>2025-11-23 to 2026-11-22 · <a href="https://github.com/VM451#contributions">GitHub contribution calendar</a></sub></p>
 
 ## Population
 
-| Stars across public repos | Contributions | Public repos | Followers |
-| ---: | ---: | ---: | ---: |
-| 0 | 1,795 | 9 | 5 |
+![Profile Signal: 0 stars, 1,795 contributions, 9 public repos, 5 followers.](./profile/population.svg)
 
 ## Landmarks
 
-| Project | Description | Language | Stars | Updated (UTC) |
-| --- | --- | --- | ---: | --- |
-| [AnyTypKit](https://github.com/VM451/AnyTypKit) | Convert any document \(Word, PowerPoint, Excel, PDF, EPUB, LaTeX, HTML, Markdown, CSV\) to clean Typst \(.typ\). Built in Rust, with CLI, Swift, Node.js, Python, and WASM. | Rust | 0 | 2026-11-22 |
-| [TypstUniverseKit](https://github.com/VM451/TypstUniverseKit) | Native Swift SDK for Typst Universe - search, download, and scaffold packages in Apple apps. Offline-first, secure-by-default, with SwiftUI browser. Zero runtime deps. | Swift | 0 | 2026-11-20 |
-| [BrightCraft-Legal](https://github.com/VM451/BrightCraft-Legal) | No description provided. | — | 0 | 2026-11-18 |
-| [LedgerAgent](https://github.com/VM451/LedgerAgent) | Self-directed ROI-aware earning agent with persistent memory, Agent Reach eyes + Agent Browser hands, delivered as a portable Agent Plugin | Rust | 0 | 2026-11-17 |
+![Project cards with languages, stars, and update dates](./profile/landmarks.svg)
 
-<!-- profile:end -->
+[**AnyTypKit**](https://github.com/VM451/AnyTypKit) · [**TypstUniverseKit**](https://github.com/VM451/TypstUniverseKit) · [**BrightCraft-Legal**](https://github.com/VM451/BrightCraft-Legal) · [**LedgerAgent**](https://github.com/VM451/LedgerAgent)
 
 ## Visit
 
-[GitHub](https://github.com/VM451) · [Repositories](https://github.com/VM451?tab=repositories) · [Followers](https://github.com/VM451?tab=followers)
+[![GitHub: @vm451](./profile/visit.svg)](https://github.com/VM451)
 
-<sub>GitHub Actions refreshes this README every 15 minutes when scheduling is available. For current activity, open the GitHub contribution calendar.</sub>
+<p align="center"><a href="https://github.com/VM451">GitHub</a> · <a href="https://github.com/VM451?tab=repositories">Repositories</a></p>
+
+<!-- profile:end -->
+
+<p align="center"><sub>SVG cards generated from public GitHub data · <a href="https://github.com/VM451/vm451/actions/workflows/refresh-profile.yml">refresh workflow</a> checks every 15 minutes · Layout inspired by <a href="https://www.gitskins.com/templates/contribution-city">GitSkins</a></sub></p>
