@@ -1,14 +1,25 @@
-# VM451
+[![VM451: Everyone else must lose, because I must win. Swift, Rust, Python, TypeScript.](./profile-header.png)](https://github.com/VM451)
 
-I build local-first AI tools for Apple platforms and document tools for Typst.
+## The city I built this year
 
-[![Contribution City: a 3D skyline of VM451's GitHub activity](./contribution-city.png)](https://github.com/VM451#contributions)
+[![Contribution City: an isometric skyline of 1,793 contributions across 176 active days; busiest day: 165.](./contribution-city.png)](https://github.com/VM451#contributions)
 
-<sub>One tile per day. Taller buildings mark more activity. Snapshot: Nov 2025 - Nov 2026.</sub>
+<p align="center">Every building is a day; taller means more contributions.</p>
 
-## Selected projects
+## Population
 
-- [ArchonKit](https://github.com/VM451/ArchonKit) — Swift SDK for on-device AI, agents, and memory in native Apple apps.
-- [AnyTypKit](https://github.com/VM451/AnyTypKit) — Rust toolkit that converts Word, PDF, HTML, and other formats to Typst.
-- [TypstUniverseKit](https://github.com/VM451/TypstUniverseKit) — Swift SDK for finding and using Typst packages offline.
-- [SwiftCode](https://github.com/VM451/SwiftCode) — Single-binary AI agent harness written in Swift 6.
+![Profile Signal: 0 stars on public repos, 1,793 contributions, 9 public repositories, and 5 followers.](./profile-population.png)
+
+## Landmarks
+
+![Four project cards: AnyTypKit, TypstUniverseKit, BrightCraft-Legal, and LedgerAgent.](./profile-landmarks.png)
+
+[**AnyTypKit**](https://github.com/VM451/AnyTypKit) · [**TypstUniverseKit**](https://github.com/VM451/TypstUniverseKit) · [**BrightCraft-Legal**](https://github.com/VM451/BrightCraft-Legal) · [**LedgerAgent**](https://github.com/VM451/LedgerAgent)
+
+## Visit
+
+[![GitHub: @vm451](./profile-visit.png)](https://github.com/VM451)
+
+<p align="center"><a href="https://github.com/VM451">GitHub</a></p>
+
+<p align="center"><sub>VM451 · GitHub data snapshot: Nov 22, 2026 · Layout inspired by <a href="https://www.gitskins.com/templates/contribution-city">GitSkins</a></sub></p>
