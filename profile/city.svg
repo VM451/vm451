@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1080" height="525" viewBox="0 0 1080 525" role="img" aria-labelledby="title desc">
 <title id="title">Contribution City</title>
-<desc id="desc">1,840 contributions across 176 active days. Busiest day: 185.</desc>
+<desc id="desc">1,958 contributions across 176 active days. Busiest day: 185.</desc>
 <defs>
 <linearGradient id="panel" x2=".85" y2="1">
   <stop stop-color="#51281b"/><stop offset=".55" stop-color="#361e17"/><stop offset="1" stop-color="#492e26"/>
@@ -17,7 +17,7 @@
 <rect x="2" y="2" width="1076" height="521" rx="25" fill="url(#glow)" stroke="none" stroke-width="1.5"/>
 
 <text x="43" y="63" fill="#ffb388" font-size="19" font-weight="700" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" text-anchor="start">CONTRIBUTION CITY</text>
-<text x="40" y="119" fill="#fff1e7" font-size="54" font-weight="800" font-family="Avenir Next, system-ui, sans-serif" text-anchor="start">1,840</text>
+<text x="40" y="119" fill="#fff1e7" font-size="54" font-weight="800" font-family="Avenir Next, system-ui, sans-serif" text-anchor="start">1,958</text>
 <text x="43" y="152" fill="#ffb388" font-size="18" font-weight="700" font-family="Avenir Next, system-ui, sans-serif" text-anchor="start">contributions in the last year</text>
 <text x="43" y="192" fill="#fff1e7" font-size="18" font-weight="500" font-family="Avenir Next, system-ui, sans-serif" text-anchor="start">176 active days</text>
 <text x="43" y="220" fill="#fff1e7" font-size="18" font-weight="500" font-family="Avenir Next, system-ui, sans-serif" text-anchor="start">Busiest day: 185</text>
@@ -221,9 +221,9 @@
 <polygon points="428.50,158.80 440.20,165.10 440.20,169.10 428.50,162.80" fill="#301e1a"/>
 <polygon points="440.20,165.10 451.90,158.80 451.90,162.80 440.20,169.10" fill="#3d251e"/>
 <polygon points="440.20,152.50 451.90,158.80 440.20,165.10 428.50,158.80" fill="#59352b"/>
-<polygon points="453.10,147.85 464.80,154.15 464.80,169.10 453.10,162.80" fill="#512a22"/>
-<polygon points="464.80,154.15 476.50,147.85 476.50,162.80 464.80,169.10" fill="#683427"/>
-<polygon points="464.80,141.55 476.50,147.85 464.80,154.15 453.10,147.85" fill="#8f4734"/>
+<polygon points="453.10,158.80 464.80,165.10 464.80,169.10 453.10,162.80" fill="#301e1a"/>
+<polygon points="464.80,165.10 476.50,158.80 476.50,162.80 464.80,169.10" fill="#3d251e"/>
+<polygon points="464.80,152.50 476.50,158.80 464.80,165.10 453.10,158.80" fill="#59352b"/>
 <polygon points="477.70,134.30 489.40,140.60 489.40,169.10 477.70,162.80" fill="#512a22"/>
 <polygon points="489.40,140.60 501.10,134.30 501.10,162.80 489.40,169.10" fill="#683427"/>
 <polygon points="489.40,128.00 501.10,134.30 489.40,140.60 477.70,134.30" fill="#8f4734"/>
@@ -1088,9 +1088,9 @@
 <polygon points="982.00,290.73 993.70,297.03 993.70,441.75 982.00,435.45" fill="#a94934"/>
 <polygon points="993.70,297.03 1005.40,290.73 1005.40,435.45 993.70,441.75" fill="#d86542"/>
 <polygon points="993.70,284.43 1005.40,290.73 993.70,297.03 982.00,290.73" fill="#ffae77"/>
-<polygon points="1006.60,431.45 1018.30,437.75 1018.30,441.75 1006.60,435.45" fill="#301e1a"/>
-<polygon points="1018.30,437.75 1030.00,431.45 1030.00,435.45 1018.30,441.75" fill="#3d251e"/>
-<polygon points="1018.30,425.15 1030.00,431.45 1018.30,437.75 1006.60,431.45" fill="#59352b"/>
+<polygon points="1006.60,311.95 1018.30,318.25 1018.30,441.75 1006.60,435.45" fill="#853e2e"/>
+<polygon points="1018.30,318.25 1030.00,311.95 1030.00,435.45 1018.30,441.75" fill="#af4f35"/>
+<polygon points="1018.30,305.65 1030.00,311.95 1018.30,318.25 1006.60,311.95" fill="#ea7749"/>
 <polygon points="895.90,438.10 907.60,444.40 907.60,448.40 895.90,442.10" fill="#301e1a"/>
 <polygon points="907.60,444.40 919.30,438.10 919.30,442.10 907.60,448.40" fill="#3d251e"/>
 <polygon points="907.60,431.80 919.30,438.10 907.60,444.40 895.90,438.10" fill="#59352b"/>
