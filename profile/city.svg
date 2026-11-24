@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1080" height="525" viewBox="0 0 1080 525" role="img" aria-labelledby="title desc">
 <title id="title">Contribution City</title>
-<desc id="desc">1,844 contributions across 177 active days. Busiest day: 165.</desc>
+<desc id="desc">1,866 contributions across 177 active days. Busiest day: 165.</desc>
 <defs>
 <linearGradient id="panel" x2=".85" y2="1">
   <stop stop-color="#51281b"/><stop offset=".55" stop-color="#361e17"/><stop offset="1" stop-color="#492e26"/>
@@ -17,7 +17,7 @@
 <rect x="2" y="2" width="1076" height="521" rx="25" fill="url(#glow)" stroke="none" stroke-width="1.5"/>
 
 <text x="43" y="63" fill="#ffb388" font-size="19" font-weight="700" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" text-anchor="start">CONTRIBUTION CITY</text>
-<text x="40" y="119" fill="#fff1e7" font-size="54" font-weight="800" font-family="Avenir Next, system-ui, sans-serif" text-anchor="start">1,844</text>
+<text x="40" y="119" fill="#fff1e7" font-size="54" font-weight="800" font-family="Avenir Next, system-ui, sans-serif" text-anchor="start">1,866</text>
 <text x="43" y="152" fill="#ffb388" font-size="18" font-weight="700" font-family="Avenir Next, system-ui, sans-serif" text-anchor="start">contributions in the last year</text>
 <text x="43" y="192" fill="#fff1e7" font-size="18" font-weight="500" font-family="Avenir Next, system-ui, sans-serif" text-anchor="start">177 active days</text>
 <text x="43" y="220" fill="#fff1e7" font-size="18" font-weight="500" font-family="Avenir Next, system-ui, sans-serif" text-anchor="start">Busiest day: 165</text>
@@ -1103,9 +1103,9 @@
 <polygon points="969.70,295.56 981.40,301.86 981.40,448.40 969.70,442.10" fill="#a94934"/>
 <polygon points="981.40,301.86 993.10,295.56 993.10,442.10 981.40,448.40" fill="#d86542"/>
 <polygon points="981.40,289.26 993.10,295.56 981.40,301.86 969.70,295.56" fill="#ffae77"/>
-<polygon points="994.30,370.46 1006.00,376.76 1006.00,448.40 994.30,442.10" fill="#512a22"/>
-<polygon points="1006.00,376.76 1017.70,370.46 1017.70,442.10 1006.00,448.40" fill="#683427"/>
-<polygon points="1006.00,364.16 1017.70,370.46 1006.00,376.76 994.30,370.46" fill="#8f4734"/>
+<polygon points="994.30,351.30 1006.00,357.60 1006.00,448.40 994.30,442.10" fill="#683327"/>
+<polygon points="1006.00,357.60 1017.70,351.30 1017.70,442.10 1006.00,448.40" fill="#873e2c"/>
+<polygon points="1006.00,345.00 1017.70,351.30 1006.00,357.60 994.30,351.30" fill="#bb583c"/>
 <polygon points="908.20,394.19 919.90,400.49 919.90,455.05 908.20,448.75" fill="#512a22"/>
 <polygon points="919.90,400.49 931.60,394.19 931.60,448.75 919.90,455.05" fill="#683427"/>
 <polygon points="919.90,387.89 931.60,394.19 919.90,400.49 908.20,394.19" fill="#8f4734"/>
