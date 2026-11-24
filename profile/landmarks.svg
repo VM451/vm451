@@ -1,6 +1,6 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="557" viewBox="0 0 1080 557" role="img" aria-labelledby="title desc">
+<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="331" viewBox="0 0 1080 331" role="img" aria-labelledby="title desc">
 <title id="title">Landmarks</title>
-<desc id="desc">AnyTypKit, TypstUniverseKit, BrightCraft-Legal, LedgerAgent</desc>
+<desc id="desc">BrightCraft-Legal, LedgerAgent</desc>
 <defs>
 <linearGradient id="panel" x2=".85" y2="1">
   <stop stop-color="#51281b"/><stop offset=".55" stop-color="#361e17"/><stop offset="1" stop-color="#492e26"/>
@@ -13,60 +13,31 @@
 </linearGradient>
 <clipPath id="avatar"><circle cx="116" cy="112" r="54"/></clipPath>
 </defs>
-<rect x="1" y="1" width="1078" height="555" rx="25" fill="url(#panel)" stroke="#a9553d" stroke-width="1.5"/>
-<rect x="2" y="2" width="1076" height="553" rx="25" fill="url(#glow)" stroke="none" stroke-width="1.5"/>
+<rect x="1" y="1" width="1078" height="329" rx="25" fill="url(#panel)" stroke="#a9553d" stroke-width="1.5"/>
+<rect x="2" y="2" width="1076" height="327" rx="25" fill="url(#glow)" stroke="none" stroke-width="1.5"/>
 
 <text x="42" y="52" fill="#ffb388" font-size="19" font-weight="500" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" text-anchor="start">PROJECTS.LIST</text>
 <text x="242" y="52" fill="#d0ab9c" font-size="17" font-weight="500" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" text-anchor="start">./projects.sh --all</text>
-<text x="1038" y="52" fill="#d0ab9c" font-size="17" font-weight="500" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" text-anchor="end">4 projects</text>
+<text x="1038" y="52" fill="#d0ab9c" font-size="17" font-weight="500" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" text-anchor="end">2 projects</text>
 <rect x="41" y="68" width="998" height="1.5" rx="0" fill="#a9553d" stroke="none" stroke-width="1.5"/>
 <rect x="36" y="91" width="493" height="207" rx="18" fill="#301f19" stroke="#a9553d" stroke-width="1.5"/>
 <rect x="37" y="130" width="491" height="1" rx="0" fill="#a9553d" stroke="none" stroke-width="1.5"/>
 <circle cx="509" cy="112" r="5" fill="#f48a56"/>
-<text x="55" y="117" fill="#ffb388" font-size="16" font-weight="500" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" text-anchor="start">AnyTypKit</text>
-<text x="57" y="165" fill="#fff1e7" font-size="24" font-weight="750" font-family="Avenir Next, system-ui, sans-serif" text-anchor="start">AnyTypKit</text>
-<text x="58" y="194" fill="#ffb388" font-size="16" font-weight="500" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" text-anchor="start">Convert any document (Word,</text>
-<text x="58" y="215" fill="#ffb388" font-size="16" font-weight="500" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" text-anchor="start">PowerPoint, Excel, PDF, EPUB,…</text>
-<rect x="57" y="237" width="64" height="23" rx="12" fill="#4c2d22" stroke="#a9553d" stroke-width="1.5"/>
-<text x="70" y="253" fill="#ffb388" font-size="13" font-weight="500" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" text-anchor="start">Rust</text>
-<circle cx="474" cy="204" r="32" fill="none" stroke="#cf9477" stroke-width="9" pathLength="100" stroke-dasharray="85.8427 14.1573" stroke-dashoffset="0.0000" transform="rotate(-90 474 204)"/>
-<circle cx="474" cy="204" r="32" fill="none" stroke="#ffb86b" stroke-width="9" pathLength="100" stroke-dasharray="9.7294 90.2706" stroke-dashoffset="-85.8427" transform="rotate(-90 474 204)"/>
-<circle cx="474" cy="204" r="32" fill="none" stroke="#f05138" stroke-width="9" pathLength="100" stroke-dasharray="3.3415 96.6585" stroke-dashoffset="-95.5721" transform="rotate(-90 474 204)"/>
-<circle cx="474" cy="204" r="32" fill="none" stroke="#ffe1bd" stroke-width="9" pathLength="100" stroke-dasharray="0.5887 99.4113" stroke-dashoffset="-98.9136" transform="rotate(-90 474 204)"/>
-<circle cx="474" cy="204" r="32" fill="none" stroke="#977267" stroke-width="9" pathLength="100" stroke-dasharray="0.3876 99.6124" stroke-dashoffset="-99.5023" transform="rotate(-90 474 204)"/>
-<circle cx="474" cy="204" r="32" fill="none" stroke="#977267" stroke-width="9" pathLength="100" stroke-dasharray="0.1101 99.8899" stroke-dashoffset="-99.8899" transform="rotate(-90 474 204)"/>
-<text x="474" y="209" fill="#fff1e7" font-size="16" font-weight="700" font-family="Avenir Next, system-ui, sans-serif" text-anchor="middle">86%</text>
-<text x="57" y="282" fill="#d0ab9c" font-size="15" font-weight="500" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" text-anchor="start">0 stars  /  updated Nov 22, 2026</text>
+<text x="55" y="117" fill="#ffb388" font-size="16" font-weight="500" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" text-anchor="start">BrightCraft-Legal</text>
+<text x="57" y="165" fill="#fff1e7" font-size="24" font-weight="750" font-family="Avenir Next, system-ui, sans-serif" text-anchor="start">BrightCraft-Legal</text>
+<text x="58" y="194" fill="#ffb388" font-size="16" font-weight="500" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" text-anchor="start">No description provided.</text>
+<text x="57" y="282" fill="#d0ab9c" font-size="15" font-weight="500" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" text-anchor="start">0 stars  /  updated Nov 18, 2026</text>
 <rect x="551" y="91" width="493" height="207" rx="18" fill="#301f19" stroke="#a9553d" stroke-width="1.5"/>
 <rect x="552" y="130" width="491" height="1" rx="0" fill="#a9553d" stroke="none" stroke-width="1.5"/>
 <circle cx="1024" cy="112" r="5" fill="#f48a56"/>
-<text x="570" y="117" fill="#ffb388" font-size="16" font-weight="500" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" text-anchor="start">TypstUniverseKit</text>
-<text x="572" y="165" fill="#fff1e7" font-size="24" font-weight="750" font-family="Avenir Next, system-ui, sans-serif" text-anchor="start">TypstUniverseKit</text>
-<text x="573" y="194" fill="#ffb388" font-size="16" font-weight="500" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" text-anchor="start">Native Swift SDK for Typst Universe</text>
-<text x="573" y="215" fill="#ffb388" font-size="16" font-weight="500" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" text-anchor="start">- search, download, and scaffold…</text>
-<rect x="572" y="237" width="67" height="23" rx="12" fill="#4c2d22" stroke="#a9553d" stroke-width="1.5"/>
-<text x="585" y="253" fill="#ffb388" font-size="13" font-weight="500" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" text-anchor="start">Swift</text>
-<circle cx="989" cy="204" r="32" fill="none" stroke="#f05138" stroke-width="9" pathLength="100" stroke-dasharray="100.0000 0.0000" stroke-dashoffset="0.0000" transform="rotate(-90 989 204)"/>
-<text x="989" y="209" fill="#fff1e7" font-size="16" font-weight="700" font-family="Avenir Next, system-ui, sans-serif" text-anchor="middle">100%</text>
-<text x="572" y="282" fill="#d0ab9c" font-size="15" font-weight="500" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" text-anchor="start">0 stars  /  updated Nov 20, 2026</text>
-<rect x="36" y="317" width="493" height="207" rx="18" fill="#301f19" stroke="#a9553d" stroke-width="1.5"/>
-<rect x="37" y="356" width="491" height="1" rx="0" fill="#a9553d" stroke="none" stroke-width="1.5"/>
-<circle cx="509" cy="338" r="5" fill="#f48a56"/>
-<text x="55" y="343" fill="#ffb388" font-size="16" font-weight="500" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" text-anchor="start">BrightCraft-Legal</text>
-<text x="57" y="391" fill="#fff1e7" font-size="24" font-weight="750" font-family="Avenir Next, system-ui, sans-serif" text-anchor="start">BrightCraft-Legal</text>
-<text x="58" y="420" fill="#ffb388" font-size="16" font-weight="500" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" text-anchor="start">No description provided.</text>
-<text x="57" y="508" fill="#d0ab9c" font-size="15" font-weight="500" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" text-anchor="start">0 stars  /  updated Nov 18, 2026</text>
-<rect x="551" y="317" width="493" height="207" rx="18" fill="#301f19" stroke="#a9553d" stroke-width="1.5"/>
-<rect x="552" y="356" width="491" height="1" rx="0" fill="#a9553d" stroke="none" stroke-width="1.5"/>
-<circle cx="1024" cy="338" r="5" fill="#f48a56"/>
-<text x="570" y="343" fill="#ffb388" font-size="16" font-weight="500" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" text-anchor="start">LedgerAgent</text>
-<text x="572" y="391" fill="#fff1e7" font-size="24" font-weight="750" font-family="Avenir Next, system-ui, sans-serif" text-anchor="start">LedgerAgent</text>
-<text x="573" y="420" fill="#ffb388" font-size="16" font-weight="500" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" text-anchor="start">Self-directed ROI-aware earning</text>
-<text x="573" y="441" fill="#ffb388" font-size="16" font-weight="500" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" text-anchor="start">agent with persistent memory,…</text>
-<rect x="572" y="463" width="64" height="23" rx="12" fill="#4c2d22" stroke="#a9553d" stroke-width="1.5"/>
-<text x="585" y="479" fill="#ffb388" font-size="13" font-weight="500" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" text-anchor="start">Rust</text>
-<circle cx="989" cy="430" r="32" fill="none" stroke="#cf9477" stroke-width="9" pathLength="100" stroke-dasharray="98.6625 1.3375" stroke-dashoffset="0.0000" transform="rotate(-90 989 430)"/>
-<circle cx="989" cy="430" r="32" fill="none" stroke="#977267" stroke-width="9" pathLength="100" stroke-dasharray="1.3375 98.6625" stroke-dashoffset="-98.6625" transform="rotate(-90 989 430)"/>
-<text x="989" y="435" fill="#fff1e7" font-size="16" font-weight="700" font-family="Avenir Next, system-ui, sans-serif" text-anchor="middle">99%</text>
-<text x="572" y="508" fill="#d0ab9c" font-size="15" font-weight="500" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" text-anchor="start">0 stars  /  updated Nov 17, 2026</text>
+<text x="570" y="117" fill="#ffb388" font-size="16" font-weight="500" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" text-anchor="start">LedgerAgent</text>
+<text x="572" y="165" fill="#fff1e7" font-size="24" font-weight="750" font-family="Avenir Next, system-ui, sans-serif" text-anchor="start">LedgerAgent</text>
+<text x="573" y="194" fill="#ffb388" font-size="16" font-weight="500" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" text-anchor="start">Self-directed ROI-aware earning</text>
+<text x="573" y="215" fill="#ffb388" font-size="16" font-weight="500" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" text-anchor="start">agent with persistent memory,…</text>
+<rect x="572" y="237" width="64" height="23" rx="12" fill="#4c2d22" stroke="#a9553d" stroke-width="1.5"/>
+<text x="585" y="253" fill="#ffb388" font-size="13" font-weight="500" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" text-anchor="start">Rust</text>
+<circle cx="989" cy="204" r="32" fill="none" stroke="#cf9477" stroke-width="9" pathLength="100" stroke-dasharray="98.6625 1.3375" stroke-dashoffset="0.0000" transform="rotate(-90 989 204)"/>
+<circle cx="989" cy="204" r="32" fill="none" stroke="#977267" stroke-width="9" pathLength="100" stroke-dasharray="1.3375 98.6625" stroke-dashoffset="-98.6625" transform="rotate(-90 989 204)"/>
+<text x="989" y="209" fill="#fff1e7" font-size="16" font-weight="700" font-family="Avenir Next, system-ui, sans-serif" text-anchor="middle">99%</text>
+<text x="572" y="282" fill="#d0ab9c" font-size="15" font-weight="500" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" text-anchor="start">0 stars  /  updated Nov 17, 2026</text>
 </svg>
