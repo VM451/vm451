@@ -4,7 +4,7 @@
 
 ## The city I built this year
 
-[![Contribution City: 2,350 contributions, 179 active days, busiest day 206.](./profile/city.svg)](https://github.com/VM451#contributions)
+[![Contribution City: 2,375 contributions, 179 active days, busiest day 231.](./profile/city.svg)](https://github.com/VM451#contributions)
 
 <p align="center">Every tile is a day; taller buildings mean more contributions.</p>
 
@@ -12,7 +12,7 @@
 
 ## Population
 
-![Profile Signal: 0 stars, 2,350 contributions, 9 public repos, 7 followers.](./profile/population.svg)
+![Profile Signal: 0 stars, 2,375 contributions, 9 public repos, 7 followers.](./profile/population.svg)
 
 ## Landmarks
 
