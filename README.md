@@ -4,7 +4,7 @@
 
 ## The city I built this year
 
-[![Contribution City: 2,497 contributions, 152 active days, busiest day 449.](./profile/city.svg)](https://github.com/VM451#contributions)
+[![Contribution City: 2,385 contributions, 152 active days, busiest day 327.](./profile/city.svg)](https://github.com/VM451#contributions)
 
 <p align="center">Every tile is a day; taller buildings mean more contributions.</p>
 
@@ -12,13 +12,13 @@
 
 ## Population
 
-![Profile Signal: 0 stars, 2,497 contributions, 7 public repos, 7 followers.](./profile/population.svg)
+![Profile Signal: 0 stars, 2,385 contributions, 6 public repos, 7 followers.](./profile/population.svg)
 
 ## Landmarks
 
 ![Project cards with languages, stars, and update dates](./profile/landmarks.svg)
 
-[**SwiftBot**](https://github.com/VM451/SwiftBot) · [**ArchonKit**](https://github.com/VM451/ArchonKit) · [**TypstKit**](https://github.com/VM451/TypstKit) · [**SwiftPort**](https://github.com/VM451/SwiftPort)
+[**ArchonKit**](https://github.com/VM451/ArchonKit) · [**TypstKit**](https://github.com/VM451/TypstKit) · [**SwiftPort**](https://github.com/VM451/SwiftPort) · [**BrightCraft-Legal**](https://github.com/VM451/BrightCraft-Legal)
 
 ## Visit
 
