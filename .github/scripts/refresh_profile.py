@@ -1,4 +1,5 @@
 import json
+import os
 import re
 from base64 import b64encode
 from datetime import date, timedelta
@@ -12,13 +13,20 @@ from profile_cards import render_cards
 USER = "VM451"
 PROFILE = f"https://github.com/{USER}"
 API = f"https://api.github.com/users/{USER}"
-PROJECTS = ("AnyTypKit", "TypstUniverseKit", "BrightCraft-Legal", "LedgerAgent")
+LANDMARK_COUNT = 4
+EXCLUDED_REPOSITORIES = {USER.lower(), f"{USER.lower()}.github.io"}
 BEGIN = "<!-- profile:begin -->"
 END = "<!-- profile:end -->"
 
 
 def fetch(url):
-    request = Request(url, headers={"User-Agent": "VM451-profile-refresh"})
+    headers = {"User-Agent": "VM451-profile-refresh"}
+    if urlsplit(url).netloc == "api.github.com":
+        headers["Accept"] = "application/vnd.github+json"
+        token = os.environ.get("GITHUB_TOKEN")
+        if token:
+            headers["Authorization"] = f"Bearer {token}"
+    request = Request(url, headers=headers)
     with urlopen(request, timeout=15) as response:
         return response.read().decode("utf-8")
 
@@ -84,16 +92,26 @@ class Calendar(HTMLParser):
         return days
 
 
+def landmark_repos(repos):
+    candidates = [
+        repo for repo in repos
+        if repo["name"].lower() not in EXCLUDED_REPOSITORIES
+        and not repo["fork"]
+        and not repo["archived"]
+        and repo["pushed_at"]
+    ]
+    candidates.sort(key=lambda repo: repo["name"].lower())
+    candidates.sort(key=lambda repo: repo["pushed_at"], reverse=True)
+    return candidates[:LANDMARK_COUNT]
+
+
 def profile_data(days, account, repos):
     counts = [count for _, count, _ in days]
     first = days[0][0]
     sunday = first - timedelta(days=(first.weekday() + 1) % 7)
-    by_name = {repo["name"]: repo for repo in repos}
     projects = []
-    for name in PROJECTS:
-        repo = by_name.get(name)
-        if repo is None:
-            continue
+    for repo in landmark_repos(repos):
+        name = repo["name"]
         mix = json.loads(fetch(f"https://api.github.com/repos/{USER}/{name}/languages"))
         if not isinstance(mix, dict) or any(type(size) is not int or size <= 0 for size in mix.values()):
             raise ValueError(f"Unexpected GitHub languages for {name}")
@@ -102,7 +120,7 @@ def profile_data(days, account, repos):
             "description": repo["description"] or "No description provided.",
             "language": repo["language"],
             "stars": repo["stargazers_count"],
-            "updated": date.fromisoformat(repo["updated_at"][:10]),
+            "updated": date.fromisoformat(repo["pushed_at"][:10]),
             "mix": sorted(mix.items(), key=lambda item: (-item[1], item[0])),
         })
     return {
@@ -115,7 +133,7 @@ def profile_data(days, account, repos):
         "total": sum(counts),
         "active": sum(count > 0 for count in counts),
         "peak": max(counts),
-        "repos": account["public_repos"],
+        "repos": len(repos),
         "followers": account["followers"],
         "stars": sum(repo["stargazers_count"] for repo in repos),
         "projects": projects,
@@ -167,15 +185,16 @@ def update(path):
 
     account = json.loads(fetch(API))
     repos = []
-    for page in range(1, account["public_repos"] // 100 + 2):
+    page = 1
+    while True:
         batch = json.loads(fetch(f"{API}/repos?type=owner&per_page=100&page={page}"))
         repos.extend(batch)
         if len(batch) < 100:
             break
+        page += 1
     if (
         account["login"] != USER
         or len({repo["id"] for repo in repos}) != len(repos)
-        or len(repos) != account["public_repos"]
         or any(repo["private"] or repo["owner"]["login"] != USER for repo in repos)
     ):
         raise ValueError("Incomplete or unexpected GitHub repository list")

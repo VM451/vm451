@@ -25,6 +25,8 @@ jobs:
         with:
           ref: main
       - name: Update the profile
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: python3 .github/scripts/refresh_profile.py
       - name: Commit changes
         run: |
