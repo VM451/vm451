@@ -2,8 +2,10 @@ name: Refresh profile
 
 on:
   schedule:
-    - cron: '7,22,37,52 * * * *'
+    - cron: '4,9,14,19,24,29,34,39,44,49,54,59 * * * *'
   workflow_dispatch:
+  repository_dispatch:
+    types: [profile-project-pushed]
   push:
     branches: [main]
     paths:
@@ -12,6 +14,7 @@ on:
 
 concurrency:
   group: profile-refresh
+  cancel-in-progress: true
 
 jobs:
   refresh:
@@ -24,6 +27,8 @@ jobs:
       - uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803 # v6.1.0
         with:
           ref: main
+      - name: Test landmark selection
+        run: python3 .github/scripts/test_refresh_profile.py
       - name: Update the profile
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

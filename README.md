@@ -28,4 +28,4 @@
 
 <!-- profile:end -->
 
-<p align="center"><sub>SVG cards generated from public GitHub data · <a href="https://github.com/VM451/vm451/actions/workflows/refresh-profile.yml">refresh workflow</a> checks every 15 minutes · Layout inspired by <a href="https://www.gitskins.com/templates/contribution-city">GitSkins</a></sub></p>
+<p align="center"><sub>SVG cards generated from public GitHub data · <a href="https://github.com/VM451/vm451/actions/workflows/refresh-profile.yml">refresh workflow</a> auto-updates from live GitHub data · Layout inspired by <a href="https://www.gitskins.com/templates/contribution-city">GitSkins</a></sub></p>

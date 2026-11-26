@@ -2,7 +2,7 @@ import json
 import os
 import re
 from base64 import b64encode
-from datetime import date, timedelta
+from datetime import date, datetime, timedelta
 from html.parser import HTMLParser
 from pathlib import Path
 from urllib.parse import urlsplit, urlunsplit
@@ -92,6 +92,10 @@ class Calendar(HTMLParser):
         return days
 
 
+def pushed_at(repo):
+    return datetime.fromisoformat(repo["pushed_at"].replace("Z", "+00:00"))
+
+
 def landmark_repos(repos):
     candidates = [
         repo for repo in repos
@@ -101,7 +105,7 @@ def landmark_repos(repos):
         and repo["pushed_at"]
     ]
     candidates.sort(key=lambda repo: repo["name"].lower())
-    candidates.sort(key=lambda repo: repo["pushed_at"], reverse=True)
+    candidates.sort(key=pushed_at, reverse=True)
     return candidates[:LANDMARK_COUNT]
 
 
@@ -120,7 +124,7 @@ def profile_data(days, account, repos):
             "description": repo["description"] or "No description provided.",
             "language": repo["language"],
             "stars": repo["stargazers_count"],
-            "updated": date.fromisoformat(repo["pushed_at"][:10]),
+            "updated": pushed_at(repo).date(),
             "mix": sorted(mix.items(), key=lambda item: (-item[1], item[0])),
         })
     return {
