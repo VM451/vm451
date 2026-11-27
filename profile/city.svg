@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1080" height="525" viewBox="0 0 1080 525" role="img" aria-labelledby="title desc">
 <title id="title">Contribution City</title>
-<desc id="desc">2,392 contributions across 152 active days. Busiest day: 327.</desc>
+<desc id="desc">2,450 contributions across 153 active days. Busiest day: 327.</desc>
 <defs>
 <linearGradient id="panel" x2=".85" y2="1">
   <stop stop-color="#51281b"/><stop offset=".55" stop-color="#361e17"/><stop offset="1" stop-color="#492e26"/>
@@ -17,9 +17,9 @@
 <rect x="2" y="2" width="1076" height="521" rx="25" fill="url(#glow)" stroke="none" stroke-width="1.5"/>
 
 <text x="43" y="63" fill="#ffb388" font-size="19" font-weight="700" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" text-anchor="start">CONTRIBUTION CITY</text>
-<text x="40" y="119" fill="#fff1e7" font-size="54" font-weight="800" font-family="Avenir Next, system-ui, sans-serif" text-anchor="start">2,392</text>
+<text x="40" y="119" fill="#fff1e7" font-size="54" font-weight="800" font-family="Avenir Next, system-ui, sans-serif" text-anchor="start">2,450</text>
 <text x="43" y="152" fill="#ffb388" font-size="18" font-weight="700" font-family="Avenir Next, system-ui, sans-serif" text-anchor="start">contributions in the last year</text>
-<text x="43" y="192" fill="#fff1e7" font-size="18" font-weight="500" font-family="Avenir Next, system-ui, sans-serif" text-anchor="start">152 active days</text>
+<text x="43" y="192" fill="#fff1e7" font-size="18" font-weight="500" font-family="Avenir Next, system-ui, sans-serif" text-anchor="start">153 active days</text>
 <text x="43" y="220" fill="#fff1e7" font-size="18" font-weight="500" font-family="Avenir Next, system-ui, sans-serif" text-anchor="start">Busiest day: 327</text>
 <text x="43" y="475" fill="#ffb388" font-size="16" font-weight="500" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" text-anchor="start">@vm451</text>
 <text x="43" y="498" fill="#d0ab9c" font-size="13" font-weight="500" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" text-anchor="start">PUBLIC CONTRIBUTION CALENDAR</text>
@@ -1130,7 +1130,7 @@
 <polygon points="932.80,458.05 944.50,464.35 944.50,468.35 932.80,462.05" fill="#301e1a"/>
 <polygon points="944.50,464.35 956.20,458.05 956.20,462.05 944.50,468.35" fill="#3d251e"/>
 <polygon points="944.50,451.75 956.20,458.05 944.50,464.35 932.80,458.05" fill="#59352b"/>
-<polygon points="957.40,458.05 969.10,464.35 969.10,468.35 957.40,462.05" fill="#301e1a"/>
-<polygon points="969.10,464.35 980.80,458.05 980.80,462.05 969.10,468.35" fill="#3d251e"/>
-<polygon points="969.10,451.75 980.80,458.05 969.10,464.35 957.40,458.05" fill="#59352b"/>
+<polygon points="957.40,395.30 969.10,401.60 969.10,468.35 957.40,462.05" fill="#512a22"/>
+<polygon points="969.10,401.60 980.80,395.30 980.80,462.05 969.10,468.35" fill="#683427"/>
+<polygon points="969.10,389.00 980.80,395.30 969.10,401.60 957.40,395.30" fill="#8f4734"/>
 </svg>

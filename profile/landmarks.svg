@@ -51,7 +51,8 @@
 <circle cx="509" cy="338" r="5" fill="#f48a56"/>
 <text x="55" y="343" fill="#ffb388" font-size="16" font-weight="500" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" text-anchor="start">SwiftPort</text>
 <text x="57" y="391" fill="#fff1e7" font-size="24" font-weight="750" font-family="Avenir Next, system-ui, sans-serif" text-anchor="start">SwiftPort</text>
-<text x="58" y="420" fill="#ffb388" font-size="16" font-weight="500" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" text-anchor="start">No description provided.</text>
+<text x="58" y="420" fill="#ffb388" font-size="16" font-weight="500" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" text-anchor="start">Write your app core once in pure</text>
+<text x="58" y="441" fill="#ffb388" font-size="16" font-weight="500" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" text-anchor="start">Swift — scaffold truly native UIs…</text>
 <rect x="57" y="463" width="67" height="23" rx="12" fill="#4c2d22" stroke="#a9553d" stroke-width="1.5"/>
 <text x="70" y="479" fill="#ffb388" font-size="13" font-weight="500" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" text-anchor="start">Swift</text>
 <circle cx="474" cy="430" r="32" fill="none" stroke="#f05138" stroke-width="9" pathLength="100" stroke-dasharray="88.5430 11.4570" stroke-dashoffset="0.0000" transform="rotate(-90 474 430)"/>
