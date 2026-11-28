@@ -8,7 +8,7 @@
 
 <p align="center">Every tile is a day; taller buildings mean more contributions.</p>
 
-<p align="center"><sub>2025-11-23 to 2026-11-27 · <a href="https://github.com/VM451#contributions">GitHub contribution calendar</a></sub></p>
+<p align="center"><sub>2025-11-23 to 2026-11-28 · <a href="https://github.com/VM451#contributions">GitHub contribution calendar</a></sub></p>
 
 ## Population
 
